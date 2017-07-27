@@ -15,6 +15,7 @@ setlinebuf(stdout)
 let registry = CommandRegistry<SwiftCodeGeneratorError>()
 registry.register(InitCommand())
 registry.register(EqualityCommand())
+registry.register(EnumEqualityCommand())
 
 let helpCommand = HelpCommand(registry: registry)
 registry.register(helpCommand)
